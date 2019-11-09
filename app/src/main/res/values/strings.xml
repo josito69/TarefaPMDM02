@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">TarefaPMDM02</string>
+    <string name="title_activity_cliente">cliente</string>
+    <string name="title_activity_administrador">administrador</string>
+
+    <string name="Nombre"><u>Nombre:</u></string>
+    <string name="NombreA">NombreA</string>
+    <string name="NombreB">NombreB</string>
+    <string name="Apellido1"><u>Apellido1:</u></string>
+    <string name="Apellido1A">Apellido1A</string>
+    <string name="Apellido1B">Apellido1B</string>
+    <string name="Apellido2"><u>Apellido2:</u></string>
+    <string name="Apellido2A">Apellido2A</string>
+    <string name="Apellido2B"><u>Apellido2B</u></string>
+
+    <string name="usuario">Usuario</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="administrador">Administrador</string>
+    <string name="login">Registro</string>
+    <string name="hacer_pedido">Hacer Pedido</string>
+    <string name="pedidos_tramite">Ver pedidos en trámite</string>
+    <string name="salir">Salir</string>
+    <string name="listado_compras">Ver compras realizadas</string>
+
+    <string name="activity_tramites"><u>Pedidos en trámite</u></string>
+    <string name="activity_compras"><u>Compras realizadas</u></string>
+    <string name="activity_pedido"><u>Realizar pedido</u></string>
+    <string name="activity_finalizar_pedido"><u>Finalizar pedido</u></string>
+
+    <string name="familia"><u>Familia</u></string>
+    <string name="articulo"><u>Artículo</u></string>
+    <string name="cantidad"><u>Cantidad</u></string>
+    <string name="continuar">continuar</string>
+
+    <string name="datos_entrega"><u>Datos de entrega</u></string>
+    <string name="direccion">Dirección</string>
+    <string name="codigo_postal">Código Postal</string>
+    <string name="ciudad">Ciudad</string>
+    <string name="finalizar">Finalizar</string>
+    <string-array name="informatica">
+        <item >Pc de sobremesa</item>
+        <item>Portatil</item>
+        <item>Monitor</item>
+    </string-array>
+    <string-array name="electronica">
+        <item >Televisión</item>
+        <item>DVD</item>
+    </string-array>
+    <string-array name="moviles">
+        <item >Pixel</item>
+        <item>Galaxy</item>
+        <item>Iphone</item>
+        <item>Xiaomi</item>
+    </string-array>
+    <string-array name="categorias">
+        <item>Informática</item>
+        <item>Electrónica</item>
+        <item>Móviles</item>
+    </string-array>
+    <string-array name="cantidades">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+</resources>

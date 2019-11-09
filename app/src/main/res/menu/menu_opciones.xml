@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/op1"
+        android:icon="@drawable/delivery"
+        android:title="Ver pedidos en trámite"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/op2"
+        android:icon="@drawable/editar"
+        android:title="Facer pedido"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/op3"
+        android:icon="@drawable/carrito"
+        android:title="Ver compras realizadas"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/op4"
+        android:icon="@drawable/slir"
+        android:title="Salir"
+        app:showAsAction="always" />
+</menu>
