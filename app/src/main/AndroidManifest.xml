@@ -9,12 +9,43 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Administrador"></activity>
-        <activity android:name=".Compras_realizadas" />
-        <activity android:name=".Pedidos_Tramite" />
-        <activity android:name=".finalizarPedido" />
-        <activity android:name=".Facer_Pedido" />
-        <activity android:name=".cliente" />
+
+        <activity android:name=".Administrador">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity android:name=".Compras_realizadas" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".cliente" />
+        </activity>
+
+        <activity android:name=".Pedidos_Tramite">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".cliente" />
+        </activity>
+
+        <activity android:name=".finalizarPedido" >
+           <meta-data
+              android:name="android.support.PARENT_ACTIVITY"
+              android:value=".Facer_Pedido" />
+        </activity>
+
+        <activity android:name=".Facer_Pedido">
+           <meta-data
+              android:name="android.support.PARENT_ACTIVITY"
+              android:value=".cliente" />
+        </activity>
+
+        <activity android:name=".cliente">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
         <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

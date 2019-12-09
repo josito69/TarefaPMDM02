@@ -33,7 +33,7 @@ public class finalizarPedido extends AppCompatActivity {
               getString(R.string.ciudad)+": "+ciudad.getText().toString()+"\n"+
               getString(R.string.codigo_postal)+": "+codigoPostal.getText().toString();
         Toast.makeText(this,texto,Toast.LENGTH_LONG).show();
-        startActivity(new Intent(this,MainActivity.class));
+        startActivity(new Intent(this,cliente.class));
 
     }
 }
