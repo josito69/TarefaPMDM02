@@ -12,7 +12,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 public class Facer_Pedido extends AppCompatActivity {
-    String [] informatica,electronica,moviles,categoria,cantidades;
+    String [] informatica,electronica,moviles,categorias,cantidades;
 
     Spinner familia,articulo,cantidad;
 
@@ -25,7 +25,7 @@ public class Facer_Pedido extends AppCompatActivity {
         electronica=getResources().getStringArray(R.array.electronica);
         moviles=getResources().getStringArray(R.array.moviles);
         cantidades=getResources().getStringArray(R.array.cantidades);
-        categoria=getResources().getStringArray(R.array.categorias);
+        categorias=getResources().getStringArray(R.array.categorias);
 
         //*************inicializamos las vistas de la app ****************************************************************
         familia = findViewById(R.id.spinner);
@@ -33,7 +33,7 @@ public class Facer_Pedido extends AppCompatActivity {
         cantidad = findViewById(R.id.spinner3);
 
         //****************rellenamos los items de los spinners con entradas
-        familia.setAdapter(new ArrayAdapter<>(this, R.layout.spinner, categoria));
+        familia.setAdapter(new ArrayAdapter<>(this, R.layout.spinner, categorias));
         producto_selection();
         cantidad.setAdapter(new ArrayAdapter<>(this,R.layout.spinner,cantidades));
 ;    }
@@ -45,13 +45,13 @@ public class Facer_Pedido extends AppCompatActivity {
                 ArrayAdapter <String> adaptador;
 
                         if(opcion.equals("Informática")||opcion.equals("Informatic")){
-                           adaptador=new ArrayAdapter<String>(parent.getContext(),R.layout.spinner,informatica);
+                           adaptador=new ArrayAdapter<String>(getApplicationContext(),R.layout.spinner,informatica);
                            articulo.setAdapter(adaptador);}
                         else if(opcion.equals("Electrónica")||opcion.equals("Electronic")){
-                           adaptador=new ArrayAdapter<String>(parent.getContext(),R.layout.spinner,electronica);
+                           adaptador=new ArrayAdapter<String>(getApplicationContext(),R.layout.spinner,electronica);
                            articulo.setAdapter(adaptador);}
                         else if(opcion.equals("Móviles")||opcion.equals("Mobiles")){
-                           adaptador=new ArrayAdapter<String>(parent.getContext(),R.layout.spinner,moviles);
+                           adaptador=new ArrayAdapter<String>(getApplicationContext(),R.layout.spinner,moviles);
                            articulo.setAdapter(adaptador);}
                         else
                            throw new IllegalStateException("Unexpected value: " + opcion);

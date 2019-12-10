@@ -5,21 +5,21 @@
     <item
         android:id="@+id/op1"
         android:icon="@drawable/delivery"
-        android:title="Ver pedidos en trámite"
-        app:showAsAction="always" />
+        android:title="@string/pedidos_tramite"
+        app:showAsAction="ifRoom" />
     <item
         android:id="@+id/op2"
         android:icon="@drawable/editar"
-        android:title="Facer pedido"
-        app:showAsAction="always" />
+        android:title="@string/hacer_pedido"
+        app:showAsAction="ifRoom" />
     <item
         android:id="@+id/op3"
         android:icon="@drawable/carrito"
-        android:title="Ver compras realizadas"
+        android:title="@string/listado_compras"
         app:showAsAction="always" />
     <item
         android:id="@+id/op4"
         android:icon="@drawable/slir"
-        android:title="Salir"
+        android:title="@string/salir"
         app:showAsAction="always" />
 </menu>
