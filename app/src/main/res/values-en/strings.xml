@@ -19,7 +19,7 @@
     <string name="administrador">Administrator</string>
     <string name="login">Login</string>
     <string name="hacer_pedido">Placing an order</string>
-    <string name="pedidos_tramite">Checking processed orders</string>
+    <string name="pedidos_tramite">Processed orders</string>
     <string name="salir">Logout</string>
     <string name="listado_compras">Check your purchases</string>
 
