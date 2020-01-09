@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".cliente">
+    tools:context=".Cliente">
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -93,9 +93,8 @@
             <TextView
                 android:id="@+id/nombre"
                 style="@style/etiquetas_layout_table"
-                android:layout_width="155dp"
+                android:layout_width="186dp"
                 android:layout_height="match_parent"
-                android:text="@string/NombreA"
                 android:textAlignment="textEnd" />
         </TableRow>
 
@@ -116,7 +115,6 @@
                 style="@style/etiquetas_layout_table"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Apellido1A"
                 android:textAlignment="viewEnd" />
         </TableRow>
 
@@ -133,11 +131,10 @@
                 android:textAlignment="textStart" />
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/apellido2"
                 style="@style/etiquetas_layout_table"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Apellido2A"
                 android:textAlignment="textEnd" />
         </TableRow>
 

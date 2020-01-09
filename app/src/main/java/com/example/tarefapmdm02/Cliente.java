@@ -1,21 +1,31 @@
 package com.example.tarefapmdm02;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
-public class cliente extends AppCompatActivity {
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
+public class Cliente extends AppCompatActivity {
+    TextView nombre,apellido1,apellido2;
+    Bundle data;
     Button bt;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cliente);
+        data=getIntent().getExtras();
+        nombre=(TextView)findViewById(R.id.nombre);
+        apellido1=(TextView)findViewById(R.id.apellido1);
+        apellido2=(TextView)findViewById(R.id.apellido2);
+        nombre.setText(data.getString("nombre"));
+        apellido1.setText(data.getString("apellido1"));
+        apellido2.setText(data.getString("apellido2"));
 
     }
     @Override

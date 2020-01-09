@@ -89,12 +89,14 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
 
-            <CheckBox
-                android:id="@+id/cliente"
+            <Button
+                android:id="@+id/registro"
+                style="@style/boton"
                 android:layout_width="wrap_content"
-                android:layout_height="44dp"
+                android:layout_height="21dp"
                 android:layout_weight="1"
-                android:text="@string/administrador" />
+                android:background="@drawable/boton_redondo"
+                android:text="Registrarse" />
 
             <Space
                 android:layout_width="wrap_content"
@@ -106,13 +108,14 @@
                 style="@style/boton"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
-                android:onClick="registro"
+                android:onClick="login"
                 android:text="@string/login" />
 
             <Space
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
+
         </LinearLayout>
 
     </LinearLayout>

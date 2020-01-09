@@ -38,16 +38,16 @@
     <string name="ciudad">Ciudad</string>
     <string name="finalizar">Finalizar</string>
     <string-array name="informatica">
-        <item >Pc de sobremesa</item>
+        <item>Pc de sobremesa</item>
         <item>Portatil</item>
         <item>Monitor</item>
     </string-array>
     <string-array name="electronica">
-        <item >Televisión</item>
+        <item>Televisión</item>
         <item>DVD</item>
     </string-array>
     <string-array name="moviles">
-        <item >Pixel</item>
+        <item>Pixel</item>
         <item>Galaxy</item>
         <item>Iphone</item>
         <item>Xiaomi</item>

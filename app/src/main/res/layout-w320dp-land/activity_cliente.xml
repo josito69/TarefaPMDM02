@@ -101,7 +101,6 @@
                 style="@style/etiquetas_layout_table"
                 android:layout_width="95dp"
                 android:layout_height="match_parent"
-                android:text="@string/NombreA"
                 android:textAlignment="viewStart" />
         </TableRow>
 
@@ -122,7 +121,6 @@
                 style="@style/etiquetas_layout_table"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Apellido1A"
                 android:textAlignment="viewStart" />
         </TableRow>
 
@@ -139,11 +137,10 @@
                 android:textAlignment="textStart" />
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/apellido2"
                 style="@style/etiquetas_layout_table"
                 android:layout_width="117dp"
                 android:layout_height="match_parent"
-                android:text="@string/Apellido2A"
                 android:textAlignment="viewStart" />
         </TableRow>
 

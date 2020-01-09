@@ -37,7 +37,6 @@
                 style="@style/etiquetas_layout_table"
                 android:layout_width="155dp"
                 android:layout_height="match_parent"
-                android:text="@string/NombreB"
                 android:textAlignment="textEnd" />
         </TableRow>
 
@@ -58,7 +57,6 @@
                 style="@style/etiquetas_layout_table"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Apellido1B"
                 android:textAlignment="viewEnd" />
         </TableRow>
 
@@ -75,11 +73,10 @@
                 android:textAlignment="textStart" />
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/apellido2"
                 style="@style/etiquetas_layout_table"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Apellido2B"
                 android:textAlignment="textEnd" />
         </TableRow>
 

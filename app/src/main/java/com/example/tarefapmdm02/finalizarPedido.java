@@ -1,13 +1,13 @@
 package com.example.tarefapmdm02;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class finalizarPedido extends AppCompatActivity {
      Bundle data;
@@ -33,7 +33,7 @@ public class finalizarPedido extends AppCompatActivity {
               getString(R.string.ciudad)+": "+ciudad.getText().toString()+"\n"+
               getString(R.string.codigo_postal)+": "+codigoPostal.getText().toString();
         Toast.makeText(this,texto,Toast.LENGTH_LONG).show();
-        startActivity(new Intent(this,cliente.class));
+        startActivity(new Intent(this, Cliente.class));
 
     }
 }
