@@ -104,7 +104,7 @@
         android:layout_height="24dp"
         android:layout_marginTop="168dp"
         android:layout_marginEnd="32dp"
-        android:onClick="mostrarPedido"
+        android:onClick="almacenarPedido"
         android:text="@string/finalizar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

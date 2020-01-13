@@ -4,28 +4,26 @@
     <string name="title_activity_administrador">administrador</string>
 
     <string name="Nombre"><u>Nombre:</u></string>
-    <string name="NombreA">NombreA</string>
-    <string name="NombreB">NombreB</string>
     <string name="Apellido1"><u>Apellido1:</u></string>
-    <string name="Apellido1A">Apellido1A</string>
-    <string name="Apellido1B">Apellido1B</string>
     <string name="Apellido2"><u>Apellido2:</u></string>
-    <string name="Apellido2A">Apellido2A</string>
-    <string name="Apellido2B"><u>Apellido2B</u></string>
 
     <string name="usuario">Usuario</string>
+    <string name="cliente">Cliente</string>
     <string name="contraseña">Contraseña</string>
     <string name="administrador">Administrador</string>
-    <string name="login">Registro</string>
+    <string name="login">Login</string>
     <string name="hacer_pedido">Hacer Pedido</string>
     <string name="pedidos_tramite">Ver pedidos en trámite</string>
     <string name="salir">Salir</string>
     <string name="listado_compras">Ver compras realizadas</string>
+    <string name="registrar">Registrar</string>
 
     <string name="activity_tramites"><u>Pedidos en trámite</u></string>
-    <string name="activity_compras"><u>Compras realizadas</u></string>
-    <string name="activity_pedido"><u>Realizar pedido</u></string>
+    <string name="activity_compras"><u>Pedidos aceptados</u></string>
+    <string name="activity_rechazados"><u>Pedidos rechazados</u></string>
+    <string name="activity_pedido"><u>Realizar nuevo pedido</u></string>
     <string name="activity_finalizar_pedido"><u>Finalizar pedido</u></string>
+    <string name="activity_registro"><u>Página de Registro</u></string>
 
     <string name="familia"><u>Familia</u></string>
     <string name="articulo"><u>Artículo</u></string>
@@ -37,6 +35,7 @@
     <string name="codigo_postal">Código Postal</string>
     <string name="ciudad">Ciudad</string>
     <string name="finalizar">Finalizar</string>
+
     <string-array name="informatica">
         <item>Pc de sobremesa</item>
         <item>Portatil</item>

@@ -4,21 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Administrador">
+    tools:context=".Usuario">
 
     <TableLayout
         android:id="@+id/tableLayout5"
-        android:layout_width="266dp"
-        android:layout_height="94dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="112dp"
-        android:layout_marginBottom="113dp"
+        android:layout_width="271dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="265dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="260dp"
+        android:layout_marginBottom="244dp"
         android:background="#DDDAC8"
         android:orientation="horizontal"
         android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/userImage">
 
         <TableRow
             android:layout_width="match_parent"
@@ -83,14 +85,17 @@
     </TableLayout>
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="169dp"
-        android:layout_height="227dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="36dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/userImage"
+        android:layout_width="506dp"
+        android:layout_height="691dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="72dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout5"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.657"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/obama" />
 </androidx.constraintlayout.widget.ConstraintLayout>

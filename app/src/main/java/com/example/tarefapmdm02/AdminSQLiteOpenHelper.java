@@ -19,19 +19,21 @@ public class AdminSQLiteOpenHelper extends SQLiteOpenHelper {
                                          "apellido2 text,"+
                                          "email text," +
                                          "usuario text unique," +
-                                         "contraseñal text, " +
+                                         "contraseña text, " +
                                          "tipoUsuario text)");
         db.execSQL("create table pedidos(codigo integer primary key autoincrement," +
-                                        "articulo text," +
                                         "categoria text," +
+                                        "articulo text," +
                                         "cantidad tinyint," +
+                                        "estado text,"+
                                         "direccion text," +
                                         "ciudad text," +
-                                        "codigoPostal int)");
+                                        "codigoPostal integer,"+
+                                        "idUser integer)");
 
-        db.execSQL("insert into usuarios(nombre,apellido1,apellido2,email,usuario,contraseñal,tipoUsuario)" +
+        db.execSQL("insert into usuarios(nombre,apellido1,apellido2,email,usuario,contraseña,tipoUsuario)" +
                                "values('NameA','Apellido1A','Apellido2A','NameA@dam.com','cliente1','abc123.','cliente')");
-        db.execSQL("insert into usuarios(nombre,apellido1,apellido2,email,usuario,contraseñal,tipoUsuario)" +
+        db.execSQL("insert into usuarios(nombre,apellido1,apellido2,email,usuario,contraseña,tipoUsuario)" +
                         "values('NameB','Apellido1B','Apellido2B','NameB@dam.com','admin','abc123.','administrador')");
     }
 

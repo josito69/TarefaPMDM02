@@ -4,79 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Cliente">
-
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="353dp"
-        android:layout_height="175dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <Button
-            android:id="@+id/pedir"
-            style="@style/boton"
-            android:layout_width="match_parent"
-            android:onClick="facerPedido"
-            android:text="@string/hacer_pedido" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="5dp" />
-
-        <Button
-            android:id="@+id/tramite"
-            style="@style/boton"
-            android:layout_width="match_parent"
-            android:onClick="ver_pedidos_tramite"
-            android:text="@string/pedidos_tramite" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="5dp" />
-
-        <Button
-            android:id="@+id/compras"
-            style="@style/boton"
-            android:layout_width="match_parent"
-            android:onClick="ver_compras_realizads"
-            android:text="@string/listado_compras" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="5dp" />
-
-        <Button
-            android:id="@+id/salir"
-            style="@style/boton"
-            android:layout_width="match_parent"
-            android:onClick="finalizar"
-            android:text="@string/salir" />
-    </LinearLayout>
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="571dp"
-        android:layout_height="620dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/donald_duck" />
+    tools:context=".Usuario">
 
     <TableLayout
-        android:layout_width="288dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="156dp"
-        android:background="@color/cuadros"
+        android:id="@+id/tableLayout5"
+        android:layout_width="266dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginBottom="113dp"
+        android:background="#DDDAC8"
         android:orientation="horizontal"
         android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TableRow
             android:layout_width="match_parent"
@@ -93,7 +35,7 @@
             <TextView
                 android:id="@+id/nombre"
                 style="@style/etiquetas_layout_table"
-                android:layout_width="186dp"
+                android:layout_width="155dp"
                 android:layout_height="match_parent"
                 android:textAlignment="textEnd" />
         </TableRow>
@@ -140,4 +82,15 @@
 
     </TableLayout>
 
+    <ImageView
+        android:id="@+id/userImage"
+        android:layout_width="169dp"
+        android:layout_height="227dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/obama" />
 </androidx.constraintlayout.widget.ConstraintLayout>

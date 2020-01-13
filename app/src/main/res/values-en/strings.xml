@@ -5,16 +5,11 @@
     <string name="title_activity_administrador">administrator</string>
 
     <string name="Nombre"><u>Name:</u></string>
-    <string name="NombreA">NameA</string>
-    <string name="NombreB">NameB</string>
     <string name="Apellido1"><u>Surname1:</u></string>
-    <string name="Apellido1A">Surname1A</string>
-    <string name="Apellido1B">Surname1B</string>
     <string name="Apellido2"><u>Surname2:</u></string>
-    <string name="Apellido2A">Surname2A</string>
-    <string name="Apellido2B"><u>Surname2B</u></string>
 
     <string name="usuario">User</string>
+    <string name="cliente">Costumer</string>
     <string name="contraseña">Password</string>
     <string name="administrador">Administrator</string>
     <string name="login">Login</string>
@@ -23,15 +18,18 @@
     <string name="salir">Logout</string>
     <string name="listado_compras">Check your purchases</string>
 
-    <string name="activity_tramites"><u>Processed orders</u></string>
-    <string name="activity_compras"><u>Purchases</u></string>
-    <string name="activity_pedido"><u>Making an order</u></string>
+    <string name="activity_tramites"><u>Pendent orders</u></string>
+    <string name="activity_compras"><u>Acepted orders</u></string>
+    <string name="activity_rechazados"><u>Rejected orders</u></string>
+    <string name="activity_pedido"><u>Make new order</u></string>
     <string name="activity_finalizar_pedido"><u>Finishing your order</u></string>
+    <string name="activity_registro"><u>Register Page</u></string>
 
     <string name="familia"><u>Category</u></string>
     <string name="articulo"><u>Item</u></string>
     <string name="cantidad"><u>Cantity</u></string>
     <string name="continuar">Continue</string>
+    <string name="registrar">Register</string>
 
     <string name="datos_entrega"><u>Delivery data</u></string>
     <string name="direccion">Address</string>

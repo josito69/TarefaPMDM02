@@ -3,23 +3,29 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/op1"
-        android:icon="@drawable/delivery"
-        android:title="@string/pedidos_tramite"
-        app:showAsAction="ifRoom" />
-    <item
-        android:id="@+id/op2"
-        android:icon="@drawable/editar"
-        android:title="@string/hacer_pedido"
-        app:showAsAction="ifRoom" />
-    <item
-        android:id="@+id/op3"
-        android:icon="@drawable/carrito"
-        android:title="@string/listado_compras"
-        app:showAsAction="always" />
-    <item
         android:id="@+id/op4"
         android:icon="@drawable/slir"
         android:title="@string/salir"
         app:showAsAction="always" />
+    <item
+        android:id="@+id/op1"
+        android:icon="@drawable/delivery"
+        android:title="@string/activity_tramites"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/op2"
+        android:icon="@drawable/carrito"
+        android:title="@string/activity_compras"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/op3"
+        android:contentDescription="Pedidos rechazados"
+        android:icon="@drawable/baseline_delete_forever_black_18dp"
+        android:title="@string/activity_rechazados"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/op5"
+        android:icon="@drawable/editar"
+        android:title="@string/activity_pedido"
+        app:showAsAction="ifRoom" />
 </menu>

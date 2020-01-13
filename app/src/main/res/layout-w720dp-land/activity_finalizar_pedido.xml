@@ -104,7 +104,7 @@
         android:layout_height="33dp"
         android:layout_marginStart="784dp"
         android:layout_marginTop="64dp"
-        android:onClick="mostrarPedido"
+        android:onClick="almacenarPedido"
         android:text="@string/finalizar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tableLayout" />

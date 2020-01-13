@@ -4,21 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Administrador">
+    tools:context=".Usuario">
 
     <TableLayout
         android:id="@+id/tableLayout5"
-        android:layout_width="287dp"
-        android:layout_height="99dp"
-        android:layout_marginStart="232dp"
-        android:layout_marginTop="353dp"
-        android:layout_marginBottom="348dp"
+        android:layout_width="273dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="29dp"
         android:background="#DDDAC8"
         android:orientation="horizontal"
         android:padding="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/userImage">
 
         <TableRow
             android:layout_width="match_parent"
@@ -83,14 +83,15 @@
     </TableLayout>
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="477dp"
-        android:layout_height="606dp"
-        android:layout_marginTop="96dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="98dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/userImage"
+        android:layout_width="227dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="108dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/obama" />
 </androidx.constraintlayout.widget.ConstraintLayout>

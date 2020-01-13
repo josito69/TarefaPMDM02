@@ -96,6 +96,7 @@
                 android:layout_height="21dp"
                 android:layout_weight="1"
                 android:background="@drawable/boton_redondo"
+                android:onClick="registro_usuario"
                 android:text="Registrarse" />
 
             <Space
@@ -107,7 +108,7 @@
                 android:id="@+id/login"
                 style="@style/boton"
                 android:layout_width="wrap_content"
-                android:layout_height="24dp"
+                android:layout_height="21dp"
                 android:onClick="login"
                 android:text="@string/login" />
 

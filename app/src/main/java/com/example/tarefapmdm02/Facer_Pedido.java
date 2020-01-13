@@ -1,24 +1,31 @@
 package com.example.tarefapmdm02;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.content.res.Resources;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Facer_Pedido extends AppCompatActivity {
     String [] informatica,electronica,moviles,categorias,cantidades;
-
     Spinner familia,articulo,cantidad;
+    int idUser;
+    String tipoUsuario;
+    Bundle data;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_facer__pedido);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+        data=getIntent().getExtras();
+        idUser=data.getInt("idUser");
+        tipoUsuario=data.getString("tipoUsuario");
 
         //*************inicializamos los arrays para los spinners extrayéndolos de strings.xml***************************
         informatica=getResources().getStringArray(R.array.informatica);
@@ -36,7 +43,8 @@ public class Facer_Pedido extends AppCompatActivity {
         familia.setAdapter(new ArrayAdapter<>(this, R.layout.spinner, categorias));
         producto_selection();
         cantidad.setAdapter(new ArrayAdapter<>(this,R.layout.spinner,cantidades));
-;    }
+        idUser=getIntent().getExtras().getInt("idUser");
+    }
     public void producto_selection(){
         familia.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -66,6 +74,21 @@ public class Facer_Pedido extends AppCompatActivity {
        i.putExtra("categoria",familia.getSelectedItem().toString());
        i.putExtra("producto",articulo.getSelectedItem().toString());
        i.putExtra("cantidad",cantidad.getSelectedItem().toString());
+       i.putExtra("idUser",idUser);
        startActivity(i);
+    }
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                Intent i=new Intent(this, Usuario.class);
+                i.putExtra("idUser",idUser);
+                i.putExtra("tipoUsuario",tipoUsuario);
+                startActivity(i);
+                finish();
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }

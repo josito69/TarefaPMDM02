@@ -32,29 +32,19 @@ public class MainActivity extends AppCompatActivity {
         Cursor cursor= bd.rawQuery("select * from usuarios where usuario="+"\""+nombre+"\"",null);
 
         if(cursor.moveToFirst()) {
-            String tipousuario=cursor.getString(7);
             if (cursor.getString(6).equals(contraseña)) {
-                String nome=cursor.getString(1);
-                String apelido1=cursor.getString(2);
-                String apelido2=cursor.getString(3);
-
-                if(tipousuario.equals("administrador")){
-                    i=new Intent(this,Administrador.class);
-                    i.putExtra("nombre",nome);
-                    i.putExtra("apellido1",apelido1);
-                    i.putExtra("apellido2",apelido2);
-                    startActivity(i);}
-                if(tipousuario.equals("cliente")){
-                    i=new Intent(this, Cliente.class);
-                    i.putExtra("nombre",nome);
-                    i.putExtra("apellido1",apelido1);
-                    i.putExtra("apellido2",apelido2);
-                    startActivity(i);}
-            }
+                i=new Intent(this, Usuario.class);
+                i.putExtra("idUser",cursor.getInt(0));
+                startActivity(i);}
             else
                 Toast.makeText(this, "Constraseña errónea", Toast.LENGTH_LONG).show();
         } else
-                Toast.makeText(this,"usuario no existe",Toast.LENGTH_LONG).show();
+                Toast.makeText(this,"Usuario no existe",Toast.LENGTH_LONG).show();
+
+    }
+    public void registro_usuario(View vista){
+        Intent i=new Intent(this,RegistroActivity.class);
+        startActivity(i);
 
     }
 }
