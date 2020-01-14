@@ -74,7 +74,7 @@ public class RecyclerViewAdapter  extends RecyclerView.Adapter {
                 @Override
                 public void onClick(View v) {
                     final AlertDialog.Builder venta = new AlertDialog.Builder(contexto)
-                            .setTitle("Eliminación de registros Tabla:Pedidos").setIcon(android.R.drawable.ic_dialog_info)
+                            .setTitle("Eliminación de registros Tabla:Pedidos").setIcon(android.R.drawable.ic_delete)
                             .setMessage("¿Seguro de querer ELIMINAR?")
                             .setPositiveButton("SI", new DialogInterface.OnClickListener() {
                                 @Override
@@ -102,7 +102,7 @@ public class RecyclerViewAdapter  extends RecyclerView.Adapter {
                 public void onClick(View v) {
                     ///********************
                    final AlertDialog.Builder venta = new AlertDialog.Builder(contexto)
-                            .setTitle("Aceptación de registros Tabla:Pedidos").setIcon(android.R.drawable.ic_delete)
+                            .setTitle("Aceptación de registros Tabla:Pedidos").setIcon(android.R.drawable.ic_dialog_info)
                             .setMessage("¿Seguro de querer ACEPTAR?")
                             .setPositiveButton("SI", new DialogInterface.OnClickListener() {
                                 @Override

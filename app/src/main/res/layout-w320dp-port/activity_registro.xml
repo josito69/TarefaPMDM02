@@ -23,13 +23,15 @@
     <TableLayout
         android:id="@+id/tableLayout3"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9">
+        app:layout_constraintTop_toBottomOf="@+id/registro">
 
         <TableRow
             android:layout_width="wrap_content"
@@ -42,7 +44,7 @@
                 android:text="@string/Nombre" />
 
             <EditText
-                android:id="@+id/regname"
+                android:id="@+id/regnome"
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -186,12 +188,14 @@
     <Button
         android:id="@+id/registro"
         style="@style/boton"
-        android:layout_width="108dp"
-        android:layout_height="28dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="32dp"
+        android:layout_width="117dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:onClick="registro"
         android:text="@string/registrar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout3" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 </androidx.constraintlayout.widget.ConstraintLayout>

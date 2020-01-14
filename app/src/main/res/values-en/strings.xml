@@ -10,6 +10,7 @@
 
     <string name="usuario">User</string>
     <string name="cliente">Costumer</string>
+    <string name="Email">Email</string>
     <string name="contraseña">Password</string>
     <string name="administrador">Administrator</string>
     <string name="login">Login</string>

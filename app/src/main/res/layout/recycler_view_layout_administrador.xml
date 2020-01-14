@@ -10,7 +10,7 @@
     <TextView
         android:id="@+id/idpedido"
         style="@style/etiquetas_layout_table"
-        android:layout_width="wrap_content"
+        android:layout_width="20dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:textAlignment="textStart" />

@@ -24,8 +24,8 @@ public class RegistroActivity extends AppCompatActivity {
         bdhelper=new AdminSQLiteOpenHelper(this,"administracion",null, 1);
         bd = bdhelper.getWritableDatabase();
 
-        nombre=(EditText)findViewById(R.id.regname);
-        apellido1=(EditText)findViewById(R.id.regapellido1);
+        nombre=(EditText)findViewById(R.id.regnome);
+        apellido1=(EditText)findViewById(R.id.regnome);
         apellido2=(EditText)findViewById(R.id.regapellido2);
         email=(EditText)findViewById(R.id.regmail);
         usuario=(EditText)findViewById(R.id.regusuario);

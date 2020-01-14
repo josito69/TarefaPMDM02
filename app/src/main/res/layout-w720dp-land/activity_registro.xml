@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/cabecera"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroActivity">
+
+    <TextView
+        android:id="@+id/textView9"
+        style="@style/cabecera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/activity_registro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp">
+
+            <TextView
+                style="@style/etiquetas_layout_table"
+                android:layout_width="144dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Nombre" />
+
+            <EditText
+                android:id="@+id/regnome"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="nombre"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp">
+
+            <TextView
+                style="@style/etiquetas_layout_table"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Apellido1" />
+
+            <EditText
+                android:id="@+id/regapellido1"
+                android:layout_width="204dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="apellido1"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp">
+
+            <TextView
+                style="@style/etiquetas_layout_table"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Apellido2" />
+
+            <EditText
+                android:id="@+id/regapellido2"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="apellido2"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp">
+
+            <TextView
+                style="@style/etiquetas_layout_table"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email:" />
+
+            <EditText
+                android:id="@+id/regmail"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="email"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp">
+
+            <TextView
+                style="@style/etiquetas_layout_table"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/usuario" />
+
+            <EditText
+                android:id="@+id/regusuario"
+                android:layout_width="163dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="usuario"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="40dp">
+
+            <TextView
+                style="@style/etiquetas_layout_table"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contraseña" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="contraseña"
+                android:inputType="textPassword" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="2"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/regcliente"
+                        style="@style/etiquetas_layout_table"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="@string/cliente" />
+
+                    <RadioButton
+                        android:id="@+id/regadmin"
+                        style="@style/etiquetas_layout_table"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/administrador" />
+                </RadioGroup>
+            </LinearLayout>
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/registro"
+        style="@style/boton"
+        android:layout_width="117dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="48dp"
+        android:onClick="registro"
+        android:text="@string/registrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

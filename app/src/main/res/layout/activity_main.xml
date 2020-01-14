@@ -53,7 +53,7 @@
             android:layout_height="30dp" />
 
         <TextView
-            android:id="@+id/password"
+            android:id="@+id/textview20"
             style="@style/etiquetas_layout_table"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
