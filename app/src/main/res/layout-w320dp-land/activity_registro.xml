@@ -9,39 +9,27 @@
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="120dp"
+        android:layout_width="194dp"
         android:layout_height="40dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
+        android:hint="@string/contraseña"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textview20" />
+        app:layout_constraintTop_toBottomOf="@+id/regapellido2" />
 
     <TextView
         android:id="@+id/textView9"
         style="@style/cabecera"
         android:layout_width="203dp"
         android:layout_height="29dp"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="8dp"
         android:text="@string/activity_registro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textview24"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/Nombre"
-        android:textColor="@color/rojo_morado"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <EditText
         android:id="@+id/regnome"
@@ -50,22 +38,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:ems="10"
+        android:hint="@string/Nombre"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textview24" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:text="@string/Apellido1"
-        android:textColor="@color/rojo_morado"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/textView18"
-        app:layout_constraintStart_toEndOf="@+id/textview24"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <EditText
@@ -74,86 +49,35 @@
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
         android:ems="10"
+        android:hint="Apellido1"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toStartOf="@+id/regapellido2"
         app:layout_constraintStart_toEndOf="@+id/regnome"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
-
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:text="@string/Apellido2"
-        android:textColor="@color/rojo_morado"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <EditText
         android:id="@+id/regapellido2"
         android:layout_width="120dp"
         android:layout_height="40dp"
+        android:layout_marginStart="48dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
         android:ems="10"
+        android:hint="@string/Apellido2"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView18" />
-
-    <TextView
-        android:id="@+id/textview25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/Email"
-        android:textColor="@color/rojo_morado"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/regnome" />
-
-    <TextView
-        android:id="@+id/textview22"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:text="@string/usuario"
-        android:textColor="@color/rojo_morado"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/textview20"
-        app:layout_constraintHorizontal_bias="0.57"
-        app:layout_constraintStart_toEndOf="@+id/textview25"
-        app:layout_constraintTop_toBottomOf="@+id/regapellido1" />
-
-    <TextView
-        android:id="@+id/textview20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:text="@string/contraseña"
-        android:textColor="@color/rojo_morado"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/regapellido2" />
+        app:layout_constraintStart_toEndOf="@+id/regapellido1"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <Button
         android:id="@+id/registro"
         style="@style/boton"
         android:layout_width="136dp"
         android:layout_height="27dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:onClick="registro"
         android:text="@string/registrar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
+        app:layout_constraintTop_toBottomOf="@+id/repassword" />
 
     <EditText
         android:id="@+id/regmail"
@@ -162,9 +86,10 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:ems="10"
+        android:hint="@string/Email"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textview25" />
+        app:layout_constraintTop_toBottomOf="@+id/regnome" />
 
     <EditText
         android:id="@+id/regusuario"
@@ -172,18 +97,18 @@
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
         android:ems="10"
+        android:hint="@string/usuario"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toStartOf="@+id/password"
         app:layout_constraintStart_toEndOf="@+id/regmail"
-        app:layout_constraintTop_toBottomOf="@+id/textview22" />
+        app:layout_constraintTop_toBottomOf="@+id/regapellido1" />
 
     <RadioGroup
+        android:id="@+id/radioGroup"
         android:layout_width="288dp"
         android:layout_height="30dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/regmail">
@@ -193,6 +118,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:checked="true"
             android:text="@string/cliente"
             android:textColor="@color/rojo_morado"
             android:textStyle="bold" />
@@ -206,5 +132,60 @@
             android:textColor="@color/rojo_morado"
             android:textStyle="bold" />
     </RadioGroup>
+
+    <EditText
+        android:id="@+id/repassword"
+        android:layout_width="188dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Retype. Contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <LinearLayout
+        android:layout_width="347dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repassword">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/foto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="Hacer foto"
+                android:textColor="@color/rojo_morado"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Buscar archivo"
+                android:textColor="@color/rojo_morado"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/upload"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/baseline_done_outline_black_18dp" />
+
+        </RadioGroup>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
