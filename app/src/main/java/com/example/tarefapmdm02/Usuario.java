@@ -3,6 +3,8 @@ package com.example.tarefapmdm02;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -14,11 +16,14 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+
 public class Usuario extends AppCompatActivity {
     TextView nombre,apellido1,apellido2;
     ImageView userImage;
     int idUser;
-    String tipoUsuario;
+    String tipoUsuario,email,usuario,contraseña;
     Bundle data;
     AdminSQLiteOpenHelper dbhelper;
     SQLiteDatabase bd;
@@ -46,13 +51,18 @@ public class Usuario extends AppCompatActivity {
             apellido1.setText(cursor.getString(2));
             apellido2.setText(cursor.getString(3));
             tipoUsuario=cursor.getString(7);
-        }catch(Exception ex){
-            Toast.makeText(this,"No se ha podido acceder a la based de datos",Toast.LENGTH_LONG).show();
-        }
-        if(tipoUsuario.equals("cliente"))
+            email=cursor.getString(4);
+            usuario=cursor.getString(5);
+            contraseña=cursor.getString(6); }
+        catch(Exception ex){
+            Toast.makeText(this,"No se ha podido acceder a la base de datos",Toast.LENGTH_LONG).show(); }
+
+        if(usuario.equals("cliente1"))
             userImage.setImageResource(R.drawable.donald_duck);
-        else
+        else if(usuario.equals("administrador"))
             userImage.setImageResource(R.drawable.obama);
+        else
+            recuperaImagen();
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -100,4 +110,27 @@ public class Usuario extends AppCompatActivity {
         i.putExtra("tipoPedido",tipoPedido);
         i.putExtra("tipoUsuario",tipoUsuario);
         startActivity(i); }
+
+    public void recuperaImagen() {
+        Bitmap bitmap = null;
+        try {
+            FileInputStream fileInputStream = new FileInputStream(getApplicationContext().getFilesDir().getPath() + "/"+usuario+".png");
+            bitmap = BitmapFactory.decodeStream(fileInputStream);
+            userImage.setImageBitmap(bitmap); }
+        catch (IOException io) {
+            io.printStackTrace(); }
+    }
+
+    public void changePersonalData(View vista){
+        Intent i=new Intent(this, RegistroActivity.class);
+        i.putExtra("idUser",idUser);
+        i.putExtra("nombre",nombre.getText().toString());
+        i.putExtra("apellido1",apellido1.getText().toString());
+        i.putExtra("apellido2",apellido2.getText().toString());
+        i.putExtra("email",email);
+        i.putExtra("usuario",usuario);
+        i.putExtra("contraseña",contraseña);
+        i.putExtra("tipoUsuario",tipoUsuario);
+        startActivity(i); }
+
 }

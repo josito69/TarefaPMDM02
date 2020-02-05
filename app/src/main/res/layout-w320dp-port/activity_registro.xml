@@ -2,40 +2,26 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDefaultResource"
     style="@style/cabecera"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RegistroActivity">
 
-    <TextView
-        android:id="@+id/textView9"
-        style="@style/cabecera"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="@string/activity_registro"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TableLayout
         android:id="@+id/tableLayout3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="310dp"
+        android:layout_height="416dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="64dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registro">
 
         <TableRow
             android:layout_width="wrap_content"
-            android:layout_height="match_parent">
+            android:layout_height="34dp">
 
             <TextView
                 style="@style/etiquetas_layout_table"
@@ -88,6 +74,7 @@
                 android:ems="10"
                 android:hint="apellido2"
                 android:inputType="textPersonName" />
+
         </TableRow>
 
         <TableRow
@@ -150,7 +137,27 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/etiquetas_layout_table"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contraseña" />
+
+            <EditText
+                android:id="@+id/repassword"
+                android:layout_width="211dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="retype contraseña"
+                android:inputType="textPassword" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
             android:paddingTop="10dp">
 
             <LinearLayout
@@ -167,19 +174,66 @@
                     <RadioButton
                         android:id="@+id/regcliente"
                         style="@style/etiquetas_layout_table"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="112dp"
+                        android:layout_height="match_parent"
                         android:layout_weight="2"
+                        android:checked="true"
                         android:text="@string/cliente" />
 
                     <RadioButton
                         android:id="@+id/regadmin"
                         style="@style/etiquetas_layout_table"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="@string/administrador" />
                 </RadioGroup>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="47dp"
+                android:layout_span="2"
+                android:background="@drawable/boton_redondo"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/foto"
+                        style="@style/etiquetas_layout_table"
+                        android:layout_width="134dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:checked="true"
+                        android:text="Hacer foto" />
+
+                    <RadioButton
+                        android:id="@+id/file"
+                        style="@style/etiquetas_layout_table"
+                        android:layout_width="122dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:text="Subir archivo" />
+                </RadioGroup>
+
+                <ImageButton
+                    android:id="@+id/upload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="hacerFoto"
+                    app:srcCompat="@drawable/baseline_done_outline_black_18dp" />
+
             </LinearLayout>
         </TableRow>
 
@@ -190,12 +244,10 @@
         style="@style/boton"
         android:layout_width="117dp"
         android:layout_height="29dp"
-        android:layout_marginStart="196dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:onClick="registro"
         android:text="@string/registrar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

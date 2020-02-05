@@ -37,6 +37,7 @@
     <string name="codigo_postal">Postal code</string>
     <string name="ciudad">City</string>
     <string name="finalizar">Finish</string>
+    <string name ="pesonal_data">My account</string>
     <string-array name="informatica">
         <item>Desktop</item>
         <item>Notebook</item>

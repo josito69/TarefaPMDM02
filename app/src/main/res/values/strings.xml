@@ -36,6 +36,7 @@
     <string name="codigo_postal">Código Postal</string>
     <string name="ciudad">Ciudad</string>
     <string name="finalizar">Finalizar</string>
+    <string name ="pesonal_data">Mi cuenta</string>
 
     <string-array name="informatica">
         <item>Pc de sobremesa</item>

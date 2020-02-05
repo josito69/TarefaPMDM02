@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDefaultResource"
     style="@style/cabecera"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -22,10 +23,10 @@
 
     <TableLayout
         android:id="@+id/tableLayout3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="671dp"
+        android:layout_height="589dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,13 +39,13 @@
 
             <TextView
                 style="@style/etiquetas_layout_table"
-                android:layout_width="144dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Nombre" />
 
             <EditText
                 android:id="@+id/regnome"
-                android:layout_width="330dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="nombre"
@@ -64,7 +65,7 @@
 
             <EditText
                 android:id="@+id/regapellido1"
-                android:layout_width="204dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="apellido1"
@@ -84,7 +85,7 @@
 
             <EditText
                 android:id="@+id/regapellido2"
-                android:layout_width="119dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="apellido2"
@@ -104,7 +105,7 @@
 
             <EditText
                 android:id="@+id/regmail"
-                android:layout_width="172dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="email"
@@ -124,7 +125,7 @@
 
             <EditText
                 android:id="@+id/regusuario"
-                android:layout_width="163dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="usuario"
@@ -144,10 +145,31 @@
 
             <EditText
                 android:id="@+id/password"
-                android:layout_width="155dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="contraseña"
+                android:inputType="textPassword" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:paddingBottom="40dp">
+
+            <TextView
+                style="@style/etiquetas_layout_table"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contraseña" />
+
+            <EditText
+                android:id="@+id/repassword"
+                android:layout_width="559dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="retype contraseña"
                 android:inputType="textPassword" />
 
         </TableRow>
@@ -163,16 +185,17 @@
                 android:orientation="horizontal">
 
                 <RadioGroup
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
                     <RadioButton
                         android:id="@+id/regcliente"
                         style="@style/etiquetas_layout_table"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="240dp"
+                        android:layout_height="match_parent"
                         android:layout_weight="2"
+                        android:checked="true"
                         android:text="@string/cliente" />
 
                     <RadioButton
@@ -186,6 +209,51 @@
             </LinearLayout>
         </TableRow>
 
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="91dp">
+
+            <LinearLayout
+                android:layout_width="642dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="30dp"
+                android:layout_span="2"
+                android:background="@drawable/boton_redondo"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/foto"
+                        style="@style/etiquetas_layout_table"
+                        android:layout_width="237dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:checked="true"
+                        android:text="Hacer foto" />
+
+                    <RadioButton
+                        android:id="@+id/file"
+                        style="@style/etiquetas_layout_table"
+                        android:layout_width="359dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:text="Subir archivo" />
+                </RadioGroup>
+
+                <ImageButton
+                    android:id="@+id/upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:layout_weight="3"
+                    android:onClick="hacerFoto"
+                    app:srcCompat="@drawable/baseline_done_outline_black_18dp" />
+            </LinearLayout>
+        </TableRow>
+
     </TableLayout>
 
     <Button
@@ -193,7 +261,7 @@
         style="@style/boton"
         android:layout_width="117dp"
         android:layout_height="29dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="16dp"
         android:onClick="registro"
         android:text="@string/registrar"
         app:layout_constraintEnd_toEndOf="parent"

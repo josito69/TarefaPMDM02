@@ -82,7 +82,6 @@ public class Facer_Pedido extends AppCompatActivity {
             case android.R.id.home:
                 Intent i=new Intent(this, Usuario.class);
                 i.putExtra("idUser",idUser);
-                i.putExtra("tipoUsuario",tipoUsuario);
                 startActivity(i);
                 finish();
                 return true;

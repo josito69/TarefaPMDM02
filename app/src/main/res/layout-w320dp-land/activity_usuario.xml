@@ -2,14 +2,15 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDefaultResource"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Usuario">
 
     <TableLayout
         android:id="@+id/tableLayout5"
-        android:layout_width="266dp"
-        android:layout_height="94dp"
+        android:layout_width="275dp"
+        android:layout_height="115dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="112dp"
         android:layout_marginBottom="113dp"
@@ -93,4 +94,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/obama" />
+
+    <Button
+        android:id="@+id/account"
+        style="@style/boton"
+        android:layout_width="92dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="188dp"
+        android:layout_marginTop="40dp"
+        android:onClick="changePersonalData"
+        android:text="@string/pesonal_data"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout5" />
 </androidx.constraintlayout.widget.ConstraintLayout>

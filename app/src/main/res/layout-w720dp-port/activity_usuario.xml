@@ -2,28 +2,37 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDefaultResource"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Usuario">
 
+    <Button
+        android:id="@+id/account"
+        style="@style/boton"
+        android:layout_width="162dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="332dp"
+        android:layout_marginTop="60dp"
+        android:onClick="changePersonalData"
+        android:text="@string/pesonal_data"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout5" />
+
     <TableLayout
         android:id="@+id/tableLayout5"
-        android:layout_width="271dp"
-        android:layout_height="97dp"
-        android:layout_marginStart="265dp"
-        android:layout_marginTop="72dp"
-        android:layout_marginEnd="260dp"
-        android:layout_marginBottom="244dp"
+        android:layout_width="412dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="176dp"
         android:background="#DDDAC8"
         android:orientation="horizontal"
         android:padding="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/userImage">
 
         <TableRow
-            android:layout_width="match_parent"
+            android:layout_width="485dp"
             android:layout_height="match_parent">
 
             <TextView
@@ -44,7 +53,7 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="43dp">
+            android:layout_height="match_parent">
 
             <TextView
                 android:id="@+id/t1"
@@ -70,15 +79,15 @@
                 android:id="@+id/textView3"
                 style="@style/etiquetas_layout_table"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:text="@string/Apellido2"
                 android:textAlignment="textStart" />
 
             <TextView
                 android:id="@+id/apellido2"
                 style="@style/etiquetas_layout_table"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
                 android:textAlignment="textEnd" />
         </TableRow>
 
@@ -86,8 +95,8 @@
 
     <ImageView
         android:id="@+id/userImage"
-        android:layout_width="506dp"
-        android:layout_height="691dp"
+        android:layout_width="501dp"
+        android:layout_height="620dp"
         android:layout_marginStart="113dp"
         android:layout_marginTop="104dp"
         android:layout_marginEnd="108dp"
